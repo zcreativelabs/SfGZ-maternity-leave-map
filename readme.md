@@ -81,6 +81,7 @@ const countryShapes = svg.selectAll("path")
   .data(countries.features)
   .enter()
   .append("path")
+    .attr("d", pathGenerator)
     .attr("fill", function(country) {
       const maternityMetaData = maternityLeave.find(function(dataPoint) {
         return dataPoint.iso3 === country.properties.ADM_03
