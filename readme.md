@@ -66,7 +66,7 @@ Um die Daten zum Mutterschaftsurlaub für jedes Land zu finden, kannst du die in
 Um z.B. die Mutterschaftsurlaubsdaten für die Schweiz aus dem `maternityLeave` Array zu holen, kannst die die folgende Suche benutzen:
 
 ```js
-const maternityLeaveSwitzerland = matenrityLeave.find(function(dataPoint) {
+const maternityLeaveSwitzerland = maternityLeave.find(function(dataPoint) {
   return dataPoint.iso3 === "CHE"
 })
 
